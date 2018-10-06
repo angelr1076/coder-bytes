@@ -1,0 +1,35 @@
+<% if session[:user_id] %>
+
+<div class="row justify-content-center">
+
+  <% @all_posts.each do |p| %>
+    <div class="col-md-8 m-1">
+      <div class="card">
+
+          <span class="card-header"><span class="h4"><%= p.title %></span>
+            <% if session[:user_id] == p.user_id %>
+          <a href="/posts/<%= p.id %>/edit" class="badge badge-primary float-right">Edit Post</a>
+        <% end %>
+          </span>
+
+
+        <div class="card-body">
+          <%= p.content.gsub(/\r?\n/, '<br />')  %>
+        </div>
+        <div class="card-footer">
+          <a href="/posts/<%= p.id %>"><%= p.created_at.strftime("%l:%M %P - %B %d, %Y") %></a> | <a href="/users/<%= p.user.id %>"><%= p.user.first_name %></a>
+
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
+  <% else %>
+    <div class="jumbotron">
+      <h1 class="display-3">Coder Bytes</h1>
+      <p class="lead">Where programmers go to share ideas and help struggling newbies.</p>
+      <hr class="my-4">
+      <img src="https://images.unsplash.com/photo-1521737451536-00a86f630f3e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9a4b9121b7fc17aab37da867c434c440&auto=format&fit=crop&w=1050&q=80">
+        <a class="btn btn-danger btn-lg" href="/sign-up" role="button">Sign Up</a>
+    </div>
+<% end %>

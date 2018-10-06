@@ -1,0 +1,47 @@
+<div class="card">
+  <div class="row justify-content-center">
+    <div class="col-md-6 m-5">
+      <h1>Edit User</h1>
+
+      <form action="/users/<%= current_user.id %>" method="post">
+        <input type="hidden" name="_method" value="PUT">
+        <div class="form-group">
+          <label for="usernameInput">Username</label>
+          <input type="text" name="username" id="usernameInput" class="form-control" value="<%= current_user.username %>">
+        </div>
+        <div class="form-group">
+          <label for="passwordInput">Password</label>
+          <input type="password" name="password" id="passwordInput" class="form-control" placeholder="Password">
+        </div>
+
+        <div class="form-group">
+          <label for="firstnameInput">First Name:</label>
+          <input type="text" name="first_name" id="firstnameInput" class="form-control" placeholder="<%= current_user.first_name %>">
+        </div>
+        <div class="form-group">
+          <label for="lastnameInput">Last Name:</label>
+          <input type="text" name="last_name" id="lastnameInput" class="form-control" placeholder="<%= current_user.last_name %>">
+        </div>
+        <div class="form-group">
+          <label for="emailInput">Email address:</label>
+          <input type="email" name="email" id="emailInput" class="form-control" placeholder="<%= current_user.email %>" value="<%= current_user.email %>">
+        </div>
+        <div class="form-group">
+          <label for="bioInput">Bio</label>
+          <input type="text" name="bio" id="bioInput" class="form-control" placeholder="<%= current_user.bio %>" value="<%= current_user.bio %>">
+        </div>
+        <input class="btn btn-primary" type="submit" value="Save Edit">
+      </form>
+    </div>
+
+
+    <div class="col-md-6 m-5">
+      <form action="/users/<%= current_user.id %>" class="text-center" method="post">
+        <input type="hidden" name="_method" value="DELETE">
+        <input type="text" class="form-control" name="confirmDelete" placeholder="type 'DELETE' to confirm account deletion.">
+
+        <button type="submit" class="btn btn-outline-danger">Delete</button>
+      </form>
+    </div>
+  </div>
+</div>

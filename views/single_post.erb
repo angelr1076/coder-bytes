@@ -1,0 +1,24 @@
+<div class="row justify-content-center">
+  <div class="col-md-8 m-1">
+      <div class="card">
+
+        <div class="card">
+          <span class="card-header"><span class="h4"><%= @single_post.title %></span>
+            <% if session[:user_id] == @single_post.user_id %>
+          <a href="/posts/<%= @single_post.id %>/edit" class="badge badge-primary float-right">Edit Post</a>
+        <% end %>
+          </span>
+          <div class="card-body">
+            <%= @single_post.content.gsub(/\r?\n/, '<br />')  %>
+          </div>
+          <div class="card-footer">
+            <%= @single_post.created_at.strftime("%l:%M %P - %B %d, %Y") %> | <a href="/users/<%= @single_post.user.id %>"><%= @single_post.user.first_name %></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+</div>
+
+
+

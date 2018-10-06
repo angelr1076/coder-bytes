@@ -1,0 +1,50 @@
+body {
+  margin: 0 auto;
+  background: url("https://images.unsplash.com/photo-1531973576160-7125cd663d86?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a742680f60eb39068269bec5ec7f555e&auto=format&fit=crop&w=1050&q=80");
+  background-size: cover;
+  color: rgba(10, 10, 10, 0.644);
+  font-family: 'Roboto', sans-serif;
+  text-shadow: 1px 1px 2px rgb(204, 193, 193);
+}
+
+.flash {
+  border-radius: 2px;
+  padding: 20px;
+  margin-bottom: 10px;
+  position: relative; 
+}
+
+.flash.info {
+  background-color: #7cee7c; 
+}
+
+.flash.warning {
+  background-color: #ee7c7c; 
+}
+
+.flash a, .flash a:link, .flash a:active, .flash a:visited {
+  position: absolute;
+  right: 20px;
+  text-decoration: none;
+  color: black;
+  animation: beckon;
+  animation-duration: 3s;
+  animation-iteration-count: infinite; 
+}
+
+.flash a:hover {
+  color: white; 
+}
+
+.flash.hide {
+  display: none; 
+}
+
+.card, .jumbotron {
+  background: rgb(86, 132, 156);
+}
+
+.userBio, .userInfo, .myPosts {
+  margin-left: 20px;
+}
+

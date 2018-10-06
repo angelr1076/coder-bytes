@@ -1,0 +1,22 @@
+<span class="d-block h1 text-center">Users</span>
+<div class="row justify-content-center">
+  <% @all_users.each do |p| %>
+    <div class="col-md-8">
+      <div class="card m-1">
+        <h4 class="card-header">
+    <h4 class="userInfo"><a href="/users/<%= p.id %>"><%= p.username %></a> - <%= "#{p.first_name} #{p.last_name}" %></h4>
+    <p class="userBio"><%= "Bio: #{p.bio}" %></p>
+      </h4>
+      <hr>
+        <ul class="list-group list-group-flush">
+        <h4 class="myPosts">My posts:</h4>
+          <% p.posts.limit(10).reverse.each do |y| %>
+            <li class="list-group-item">
+              <a href="/posts/<%= y.id %>"><%= y.title %></a> <%= y.created_at.strftime("%B %d, %Y") %>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+  <% end %>
+</div>

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="/app.css">
+  <script type="text/javascript" src="../public/app.js"></script>
+  <title>Coder Bytes</title>
+</head>
+<body>
+
+<nav class="navbar navbar-dark bg-dark">
+
+  <div class="container">
+    <a class="navbar-brand" href="/">Coder Bytes</a>
+    <span class="navbar-text">Help your fellow coder out...</span>
+
+    <ul class="nav justify-content-end align-items-center">
+      <% if session[:user_id] %>
+        <li class="nav-item">
+          <a class="btn btn-outline-primary mx-1" href="/users/<%= current_user.id %>"><%= current_user.username %></a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-success mx-1" href="/posts/new">New Post</a>
+        </li>
+      <% end %>
+      <li class="nav-item">
+        <a class="nav-link text-light bg-dark " href="/posts">Posts</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-light bg-dark" href="/users">Users</a>
+      </li>
+      <% if session[:user_id] %>
+        <li class="nav-item">
+          <a class="btn btn-danger mx-1" href="/logout">Sign out</a>
+        </li>
+      <% else %>
+        <li class="nav-item">
+          <a class="btn btn-primary mx-1" href="/login" />Log In</a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-danger mx-1" href="/sign-up" />Sign Up</a>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <% flash.keys.each do |type| %>
+    <div data-alert class="flash alert alert-primary <%= type %> alert-box radius">
+      <%= flash[type] %>
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+  <% end %>
+<%= yield %>
+</div>
+
+<!--Bootstrap js/jQuery-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="/app.js"></script>
+</body>
+</html>
