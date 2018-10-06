@@ -61,5 +61,8 @@ DEPENDENCIES
   sinatra-flash
   sqlite3
 
+RUBY VERSION
+   ruby 2.5.1p57
+
 BUNDLED WITH
    1.16.6
