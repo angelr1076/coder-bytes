@@ -11,8 +11,8 @@
 
     <div class="form-group">
       <label for="contentInput">Content:</label>
-      <span class="postCount">150 character limit</span>
-    <textarea name="content" id="postArea" onkeydown="charCount()" class="form-control" placeholder="type your post" id="contentInput" rows="5" maxlength="150"></textarea>
+      <span class="newpost" id="postCount">150 character limit</span>
+    <textarea name="content" id="textArea" onkeydown="keyDown()" class="form-control" placeholder="type your post" rows="5" maxlength="150"></textarea>
     </div>
 
     <button type="submit" class="btn btn-primary btn-block">Submit Post</button>

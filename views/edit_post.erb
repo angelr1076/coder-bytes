@@ -8,7 +8,8 @@
     </div>
 
     <div class="form-group">
-      <textarea class="form-control" name="content"><%= @specific_post.content %></textarea>
+      <span class="newpost" id="postCount">150 character limit</span>
+      <textarea class="form-control" id="textArea" onkeydown="keyDown()" name="content"><%= @specific_post.content %></textarea>
     </div>
     <button type="submit" class="btn btn-success">Submit</button>
   </form>
