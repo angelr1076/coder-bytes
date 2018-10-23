@@ -1,11 +1,10 @@
 body {
   margin: 0 auto;
-  background: url("https://images.unsplash.com/photo-1531973576160-7125cd663d86?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a742680f60eb39068269bec5ec7f555e&auto=format&fit=crop&w=1050&q=80");
+  background: rgb(31, 9, 9);
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
   font-family: 'Roboto', sans-serif;
-  text-shadow: 2px 2px 3px rgb(48, 38, 38);
 }
 
 .flash {
@@ -42,7 +41,7 @@ body {
 }
 
 .card, .jumbotron {
-  background: rgb(86, 132, 156);
+  background: rgb(28, 38, 44);
 }
 
 .dateTime {
@@ -51,5 +50,9 @@ body {
 
 .userBio, .userInfo, .myPosts {
   margin-left: 20px;
+}
+
+a {
+  color: white;
 }
 
