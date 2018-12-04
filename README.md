@@ -1,4 +1,7 @@
 # coder-bytes
+Username: guest, 
+Password: guestpass
+
 Collaboration with Devon Klipp and Angel Rodriguez
 Blog app built in Sinatra featuring all CRUD features for users/profiles and posts
 Site Requirements:
