@@ -17,3 +17,5 @@ Post micro-blogs (less than 150 characters) - we used Javascript for this
 See a profile page with all of their account details and micro-blog posts to date
 Visit other users’ profile pages
 See a page with the 10 most recent posts (the “feed”)
+
+![Settings Window](https://res.cloudinary.com/angelrodriguez/image/upload/v1540985055/coder-bytes.png)
