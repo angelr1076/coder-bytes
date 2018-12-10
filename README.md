@@ -1,5 +1,5 @@
 # coder-bytes
-Username: guest, 
+Username: guest@gmail.com
 Password: guestpass
 
 Collaboration with Devon Klipp and Angel Rodriguez
@@ -18,4 +18,14 @@ See a profile page with all of their account details and micro-blog posts to dat
 Visit other users’ profile pages
 See a page with the 10 most recent posts (the “feed”)
 
-![Settings Window](https://res.cloudinary.com/angelrodriguez/image/upload/v1540985055/coder-bytes.png)
+![Settings Window](https://res.cloudinary.com/angelrodriguez/image/upload/v1544468582/Screen_Shot_2018-12-10_at_1.58.38_PM.png)
+
+![Settings Window](https://res.cloudinary.com/angelrodriguez/image/upload/v1544468582/Screen_Shot_2018-12-10_at_1.58.46_PM.png)
+
+![Settings Window](https://res.cloudinary.com/angelrodriguez/image/upload/v1544468582/Screen_Shot_2018-12-10_at_1.58.52_PM.png)
+
+![Settings Window](https://res.cloudinary.com/angelrodriguez/image/upload/v1544468584/Screen_Shot_2018-12-10_at_2.02.44_PM.png)
+
+![Settings Window](https://res.cloudinary.com/angelrodriguez/image/upload/v1544468582/Screen_Shot_2018-12-10_at_1.59.03_PM.png)
+
+![Settings Window](https://res.cloudinary.com/angelrodriguez/image/upload/v1544468583/Screen_Shot_2018-12-10_at_1.59.09_PM.png)
