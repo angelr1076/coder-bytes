@@ -1,6 +1,6 @@
 body {
   margin: 0 auto;
-  background: rgb(31, 9, 9);
+  background: url(./images/abstract.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
@@ -36,12 +36,17 @@ body {
   color: white; 
 }
 
+.list-group-item {
+  background-color: rgb(24, 22, 22);
+  color: white;
+}
+
 .flash.hide {
   display: none; 
 }
 
 .card, .jumbotron {
-  background: rgb(28, 38, 44);
+  background: url(./images/stripes.jpg);
 }
 
 .dateTime {
