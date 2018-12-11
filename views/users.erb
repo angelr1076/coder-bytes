@@ -12,7 +12,7 @@
         <h4 class="myPosts">My posts:</h4>
           <% p.posts.limit(10).reverse.each do |y| %>
             <li class="list-group-item">
-              <a href="/posts/<%= y.id %>"><%= y.title %></a> <p class="dateTime"><%= y.created_at.strftime("%B %d, %Y") %></p>
+              <a href="/posts/<%= y.id %>"><%= y.title %> <%= y.content.gsub(/\r?\n/, '<br />') %></a> <p class="dateTime"><%= y.created_at.strftime("%B %d, %Y") %></p>
             </li>
           <% end %>
         </ul>

@@ -5,6 +5,7 @@
     <% @all_posts.each do |p| %>
       <div class="col-md-8 m-1">
         <div class="card">
+        <h3 id="email-address">User - <%= p.user.email %></h3>
           <span class="card-header"><span class="h4"><%= p.title %></span>
             <% if session[:user_id] == p.user_id %>
           <a href="/posts/<%= p.id %>/edit" class="badge badge-primary float-right">Edit Post</a>
@@ -14,7 +15,7 @@
             <%= p.content.gsub(/\r?\n/, '<br />')  %>
           </div>
           <div class="card-footer">
-            <a href="/posts/<%= p.id %>"><%= p.created_at.strftime("%l:%M %P - %B %d, %Y") %></a> | <a href="/users/<%= p.user.id %>"><%= p.user.first_name %></a>
+            <a href="/posts/<%= p.id %>"><%= p.created_at.strftime("%l:%M %P - %B %d, %Y") %></a><a href="/users/<%= p.user.id %>"></a>
           </div>
         </div>
       </div>
