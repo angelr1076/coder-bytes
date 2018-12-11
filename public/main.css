@@ -71,7 +71,7 @@ hr {
   width: 100%;
 }
 
-a {
+a, .dateTime {
   color: white;
 }
 
