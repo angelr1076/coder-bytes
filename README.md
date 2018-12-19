@@ -29,3 +29,13 @@ See a page with the 10 most recent posts (the “feed”)
 ![Settings Window](https://res.cloudinary.com/angelrodriguez/image/upload/v1544468582/Screen_Shot_2018-12-10_at_1.59.03_PM.png)
 
 ![Settings Window](https://res.cloudinary.com/angelrodriguez/image/upload/v1544468583/Screen_Shot_2018-12-10_at_1.59.09_PM.png)
+
+#Mobile Responsive 
+
+![Settings Window](https://res.cloudinary.com/angelrodriguez/image/upload/v1545252676/Screen_Shot_2018-12-19_at_3.48.37_PM.png)
+
+![Settings Window](https://res.cloudinary.com/angelrodriguez/image/upload/v1545252676/Screen_Shot_2018-12-19_at_3.48.56_PM.png)
+
+![Settings Window](https://res.cloudinary.com/angelrodriguez/image/upload/v1545252676/Screen_Shot_2018-12-19_at_3.49.37_PM.png)
+
+![Settings Window](https://res.cloudinary.com/angelrodriguez/image/upload/v1545252676/Screen_Shot_2018-12-19_at_3.49.44_PM.png)
